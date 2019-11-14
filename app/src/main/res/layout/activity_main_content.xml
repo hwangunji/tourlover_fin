@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Custom Toolbar-->
+    <include
+
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/fram_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="93dp">
+
+        <!--<ImageView-->
+
+
+        <!--android:id="@+id/imageView1"-->
+        <!--android:layout_width="349dp"-->
+        <!--android:layout_height="345dp"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:paddingTop="0dp"-->
+        <!--android:src="@drawable/cmap"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--</ImageView>-->
+
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="675dp"
+            android:layout_marginTop="59dp"
+            android:layout_weight="0.7"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <Button
+            android:id="@+id/btn_repair_wr"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="570dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/work_write" />
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

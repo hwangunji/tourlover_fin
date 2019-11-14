@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteActivity"
+    android:orientation="vertical">
+
+    <!--여기는 에디트텍스트로 지정
+  text대신 hint로 지정한다
+  수정하는 텍스트의 화면 구성 코드-->
+
+    <EditText
+        android:id="@+id/write_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="#992748"
+        android:hint="건물이름을 입력하세요."
+        android:gravity="center"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/write_contents_text"
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:background="@null"
+        android:hint="내용을 입력하세요"
+        android:textSize="28sp"
+        tools:ignore="HardcodedText" />
+
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <EditText
+        android:id="@+id/write_name_text"
+        android:layout_width="422dp"
+        android:layout_height="81dp"
+        android:hint="비밀번호를 입력하세요"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <!--업로드 버튼 생성 id필수-->
+
+
+    <Button
+        android:id="@+id/write_upload_button"
+        android:layout_width="411dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#992748"
+        android:textSize="24sp"
+        android:text="저장"
+        android:textColor="@android:color/white"
+
+       />
+
+</LinearLayout>

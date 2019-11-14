@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="398dp"
+        android:layout_height="315dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="36dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/slow_load"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="395dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tableRow4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="41dp"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                app:srcCompat="?attr/actionModeCloseDrawable" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="383dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow3">
+
+            <Space
+                android:layout_width="14dp"
+                android:layout_height="42dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="출발"
+                android:textSize="25sp" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="45dp" />
+
+            <EditText
+                android:id="@+id/edit_departure"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:text="N2"
+                android:textSize="21sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="388dp"
+            android:layout_height="55dp">
+
+            <Space
+                android:layout_width="83dp"
+                android:layout_height="match_parent" />
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="296dp"
+                android:layout_height="match_parent" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="382dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="180dp">
+
+            <Space
+                android:layout_width="13dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="도착"
+                android:textSize="25sp" />
+
+            <Space
+                android:layout_width="14dp"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/edit_destination"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:text="N4"
+                android:textSize="21sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Space
+                android:layout_width="82dp"
+                android:layout_height="match_parent" />
+
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableRow>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/slow_load"
+        android:layout_width="423dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="270dp"
+        android:background="#992748"
+        android:text="길찾기"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</android.support.constraint.ConstraintLayout>
